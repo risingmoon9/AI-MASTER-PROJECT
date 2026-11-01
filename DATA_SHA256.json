@@ -1,0 +1,8 @@
+{
+  "data/processed/kitchen_mixture_quality.npz": "cf03fa462ed792a7c49269f2bb82611cda40c27d099c1047d74a22f04d12ef91",
+  "data/processed/kitchen_complete_quality.npz": "ebd7fb41cc7226b5de78d9d2b6dacd64837e60397f06e5f343144174024fe1bd",
+  "data/processed/mixture_no_source_prior.npz": "0f1b83112bf00b7f1546c32b67df187036d78f077a222365aa19288f302ee43d",
+  "data/processed/mixture_return_only.npz": "0b4b6a0003106992d7960d51410d13babf5339a5e732f878b18afb4ee60bdfc5",
+  "minari_datasets/D4RL/kitchen/complete-v2/data/main_data.hdf5": "5a4e44b8df1e3fcb7ccda28ed8fa7303cd2bd1cc636d7471e90ec6ea818446be",
+  "minari_datasets/D4RL/kitchen/complete-v2/data/metadata.json": "63713c60753cdc366a74724d8e85b1512d0c6d2e8dbb19bdf91fadb8a2ba223c"
+}

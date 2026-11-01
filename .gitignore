@@ -1,0 +1,46 @@
+# Private/local training assets
+/data/
+/minari_datasets/
+/runs/
+/audit/
+/checkpoints/
+/data_repaired/
+/data_variants/
+*.npz
+*.hdf5
+*.h5
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.zip
+*.tar
+*.tar.gz
+
+# Python and build tools
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+/build/
+/dist/
+.venv/
+venv/
+env/
+
+# Machine settings and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp

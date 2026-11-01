@@ -1,0 +1,41 @@
+seed: 4
+device: cuda
+algorithm: reference_iql
+training:
+  batch_size: 256
+  updates: 200000
+  eval_interval: 5000
+  eval_episodes: 20
+  log_interval: 1000
+  save_interval: 5000
+  save_step_checkpoints: false
+  discount: 0.99
+  tau: 0.005
+  expectile: 0.7
+  temperature: 0.5
+  max_adv_weight: 100.0
+  actor_lr: 0.0003
+  critic_lr: 0.0003
+  value_lr: 0.0003
+  hidden_dim: 256
+  hidden_depth: 2
+  normalize_obs: false
+  validation_seed_start: 11000
+  actor_loss_normalization: batch_mean
+  dropout_rate: 0.1
+  action_clip_eps: 1.0e-05
+hqa:
+  use_quality_weights: false
+  use_adaptive_bc_regularization: false
+  lambda_base: 0.2
+  lambda_rho_uncertainty: 1.0
+  lambda_eta_support: 0.5
+  lambda_min: 0.0
+  lambda_max: 2.0
+  regularization_mode: adaptive
+  lambda_constant: 0.0
+data_protocol: kitchen_common81_persistent_v1
+experiment_protocol: hqa_iql_kitchen_v1
+paths:
+  checkpoint_dir: runs/checkpoints
+  result_dir: runs/metrics

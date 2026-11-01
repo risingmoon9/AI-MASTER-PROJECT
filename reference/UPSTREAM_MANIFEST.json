@@ -1,0 +1,86 @@
+{
+  "repository": "https://github.com/ikostrikov/implicit_q_learning",
+  "commit": "09d700248117881a75cb21f0adb95c6c8a694cb2",
+  "accessed_date": "2026-10-17",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "actor.py",
+      "sha256": "8c4a438ec595c7f2c74804428458a6f6c7af05552c1bc7d908ec02a3a8eaada1",
+      "bytes": 986,
+      "url": "https://raw.githubusercontent.com/ikostrikov/implicit_q_learning/09d700248117881a75cb21f0adb95c6c8a694cb2/actor.py"
+    },
+    {
+      "path": "common.py",
+      "sha256": "9211a3ddb0fad7342cf5fcb719e9420f812347c1a0bcec2bd4a93c31c065489c",
+      "bytes": 3226,
+      "url": "https://raw.githubusercontent.com/ikostrikov/implicit_q_learning/09d700248117881a75cb21f0adb95c6c8a694cb2/common.py"
+    },
+    {
+      "path": "critic.py",
+      "sha256": "2ba5e9a735ee9cf88e071869a23f98f37a0056500e4704e95b45f8840f1c4abd",
+      "bytes": 1574,
+      "url": "https://raw.githubusercontent.com/ikostrikov/implicit_q_learning/09d700248117881a75cb21f0adb95c6c8a694cb2/critic.py"
+    },
+    {
+      "path": "dataset_utils.py",
+      "sha256": "a6404397f473546a299dc16345bf67e346466b47ad591204e9eaf03d6938d0f0",
+      "bytes": 6363,
+      "url": "https://raw.githubusercontent.com/ikostrikov/implicit_q_learning/09d700248117881a75cb21f0adb95c6c8a694cb2/dataset_utils.py"
+    },
+    {
+      "path": "evaluation.py",
+      "sha256": "86417b1dec2a1cee01b0ebeefd9fc546cfa1c30e2b741faadfc6f25c93420f95",
+      "bytes": 617,
+      "url": "https://raw.githubusercontent.com/ikostrikov/implicit_q_learning/09d700248117881a75cb21f0adb95c6c8a694cb2/evaluation.py"
+    },
+    {
+      "path": "learner.py",
+      "sha256": "80e35a82fdebdc478370b6c6e1b5c826e22572efcbda0a44dffc1b550d262128",
+      "bytes": 5114,
+      "url": "https://raw.githubusercontent.com/ikostrikov/implicit_q_learning/09d700248117881a75cb21f0adb95c6c8a694cb2/learner.py"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "9f42494426ea2b2e56b97e7ca95a7c265aa831e1ebbc80231b2c35f800dcd834",
+      "bytes": 1099,
+      "url": "https://raw.githubusercontent.com/ikostrikov/implicit_q_learning/09d700248117881a75cb21f0adb95c6c8a694cb2/LICENSE"
+    },
+    {
+      "path": "policy.py",
+      "sha256": "3c2a1c27982b5b1844b478184c62a98ba0dece2ca31afd7c850eb7e1d34c4ad3",
+      "bytes": 2998,
+      "url": "https://raw.githubusercontent.com/ikostrikov/implicit_q_learning/09d700248117881a75cb21f0adb95c6c8a694cb2/policy.py"
+    },
+    {
+      "path": "README.md",
+      "sha256": "5d18a2cfa12d481848cf806d21c6fc29f16c87971b91330b4f17e2865719fa45",
+      "bytes": 1871,
+      "url": "https://raw.githubusercontent.com/ikostrikov/implicit_q_learning/09d700248117881a75cb21f0adb95c6c8a694cb2/README.md"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "6ece0a75dba433f11f04eb1202e0e95523dbb32a7a831864d8d686f2597ea977",
+      "bytes": 328,
+      "url": "https://raw.githubusercontent.com/ikostrikov/implicit_q_learning/09d700248117881a75cb21f0adb95c6c8a694cb2/requirements.txt"
+    },
+    {
+      "path": "train_offline.py",
+      "sha256": "3b980229c3bb75babff381e38dcfbfefcfd1129244e7f2a4910ce0c4bae8f574",
+      "bytes": 4153,
+      "url": "https://raw.githubusercontent.com/ikostrikov/implicit_q_learning/09d700248117881a75cb21f0adb95c6c8a694cb2/train_offline.py"
+    },
+    {
+      "path": "value_net.py",
+      "sha256": "b5308de8c83da211e9df2845fa113b7ceee5c5ecd229c5c77b3c02f4f8aac872",
+      "bytes": 1360,
+      "url": "https://raw.githubusercontent.com/ikostrikov/implicit_q_learning/09d700248117881a75cb21f0adb95c6c8a694cb2/value_net.py"
+    },
+    {
+      "path": "configs/kitchen_config.py",
+      "sha256": "4246b9e70069899adc33e58dfe06149f4aeaf983564d900cbcc6e11cc41d1da7",
+      "bytes": 423,
+      "url": "https://raw.githubusercontent.com/ikostrikov/implicit_q_learning/09d700248117881a75cb21f0adb95c6c8a694cb2/configs/kitchen_config.py"
+    }
+  ]
+}

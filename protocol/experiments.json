@@ -1,0 +1,1156 @@
+{
+  "protocol_id": "hqa_iql_kitchen_v1",
+  "description": "One study with method comparisons and component ablations.",
+  "data_protocol": "kitchen_common81_persistent_v1",
+  "updates": 200000,
+  "checkpoint_selection": "first strict maximum of validation raw return",
+  "checkpoint_reporting": [
+    "validation_selected",
+    "fixed_200000_endpoint"
+  ],
+  "statistical_unit": "training seed; summarize each comparison separately; do not pool the reset blocks",
+  "test_exposure_note": "Ablation test resets 20000 and 20001 were used for engineering checks in the recorded study. No adjustment from those outcomes is documented. New smoke runs use separate resets 12000--12003.",
+  "reference_name": "IQL-Ref (official-source PyTorch port on a custom Kitchen task, not a benchmark-score reproduction)",
+  "runs": [
+    {
+      "name": "comparisons_low_baseline_s3",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "baseline",
+      "seed": 3,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_baseline_s3.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_baseline_s3"
+    },
+    {
+      "name": "comparisons_low_baseline_s4",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "baseline",
+      "seed": 4,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_baseline_s4.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_baseline_s4"
+    },
+    {
+      "name": "comparisons_low_baseline_s5",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "baseline",
+      "seed": 5,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_baseline_s5.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_baseline_s5"
+    },
+    {
+      "name": "comparisons_low_full_s3",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "full",
+      "seed": 3,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_full_s3.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_full_s3"
+    },
+    {
+      "name": "comparisons_low_full_s4",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "full",
+      "seed": 4,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_full_s4.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_full_s4"
+    },
+    {
+      "name": "comparisons_low_full_s5",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "full",
+      "seed": 5,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_full_s5.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_full_s5"
+    },
+    {
+      "name": "comparisons_low_quality_only_s3",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "quality_only",
+      "seed": 3,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_quality_only_s3.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_quality_only_s3"
+    },
+    {
+      "name": "comparisons_low_quality_only_s4",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "quality_only",
+      "seed": 4,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_quality_only_s4.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_quality_only_s4"
+    },
+    {
+      "name": "comparisons_low_quality_only_s5",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "quality_only",
+      "seed": 5,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_quality_only_s5.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_quality_only_s5"
+    },
+    {
+      "name": "comparisons_low_constant_bc_s3",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "constant_bc",
+      "seed": 3,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_constant_bc_s3.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_constant_bc_s3"
+    },
+    {
+      "name": "comparisons_low_constant_bc_s4",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "constant_bc",
+      "seed": 4,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_constant_bc_s4.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_constant_bc_s4"
+    },
+    {
+      "name": "comparisons_low_constant_bc_s5",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "constant_bc",
+      "seed": 5,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_constant_bc_s5.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_constant_bc_s5"
+    },
+    {
+      "name": "comparisons_low_bc_s3",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "bc",
+      "seed": 3,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_bc_s3.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_bc_s3"
+    },
+    {
+      "name": "comparisons_low_bc_s4",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "bc",
+      "seed": 4,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_bc_s4.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_bc_s4"
+    },
+    {
+      "name": "comparisons_low_bc_s5",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "bc",
+      "seed": 5,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_bc_s5.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_bc_s5"
+    },
+    {
+      "name": "comparisons_low_no_source_prior_s3",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "no_source_prior",
+      "seed": 3,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_no_source_prior_s3.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": "data/processed/mixture_no_source_prior.npz",
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_no_source_prior_s3"
+    },
+    {
+      "name": "comparisons_low_no_source_prior_s4",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "no_source_prior",
+      "seed": 4,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_no_source_prior_s4.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": "data/processed/mixture_no_source_prior.npz",
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_no_source_prior_s4"
+    },
+    {
+      "name": "comparisons_low_no_source_prior_s5",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "no_source_prior",
+      "seed": 5,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_no_source_prior_s5.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": "data/processed/mixture_no_source_prior.npz",
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_no_source_prior_s5"
+    },
+    {
+      "name": "comparisons_low_return_only_s3",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "return_only",
+      "seed": 3,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_return_only_s3.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": "data/processed/mixture_return_only.npz",
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_return_only_s3"
+    },
+    {
+      "name": "comparisons_low_return_only_s4",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "return_only",
+      "seed": 4,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_return_only_s4.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": "data/processed/mixture_return_only.npz",
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_return_only_s4"
+    },
+    {
+      "name": "comparisons_low_return_only_s5",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "return_only",
+      "seed": 5,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_return_only_s5.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": "data/processed/mixture_return_only.npz",
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_return_only_s5"
+    },
+    {
+      "name": "comparisons_complete_bc_s3",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "bc",
+      "seed": 3,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_bc_s3.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_bc_s3"
+    },
+    {
+      "name": "comparisons_complete_bc_s4",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "bc",
+      "seed": 4,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_bc_s4.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_bc_s4"
+    },
+    {
+      "name": "comparisons_complete_bc_s5",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "bc",
+      "seed": 5,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_bc_s5.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_bc_s5"
+    },
+    {
+      "name": "comparisons_low_reference_iql_s3",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "reference_iql",
+      "seed": 3,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_reference_iql_s3.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_reference_iql_s3"
+    },
+    {
+      "name": "comparisons_low_reference_iql_s4",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "reference_iql",
+      "seed": 4,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_reference_iql_s4.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_reference_iql_s4"
+    },
+    {
+      "name": "comparisons_low_reference_iql_s5",
+      "comparison": "comparisons",
+      "dataset": "mixture",
+      "method": "reference_iql",
+      "seed": 5,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_low_reference_iql_s5.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_low_reference_iql_s5"
+    },
+    {
+      "name": "comparisons_complete_reference_iql_s3",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "reference_iql",
+      "seed": 3,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_reference_iql_s3.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_reference_iql_s3"
+    },
+    {
+      "name": "comparisons_complete_reference_iql_s4",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "reference_iql",
+      "seed": 4,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_reference_iql_s4.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_reference_iql_s4"
+    },
+    {
+      "name": "comparisons_complete_reference_iql_s5",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "reference_iql",
+      "seed": 5,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_reference_iql_s5.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_reference_iql_s5"
+    },
+    {
+      "name": "comparisons_complete_baseline_s3",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "baseline",
+      "seed": 3,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_baseline_s3.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_baseline_s3"
+    },
+    {
+      "name": "comparisons_complete_baseline_s4",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "baseline",
+      "seed": 4,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_baseline_s4.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_baseline_s4"
+    },
+    {
+      "name": "comparisons_complete_baseline_s5",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "baseline",
+      "seed": 5,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_baseline_s5.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_baseline_s5"
+    },
+    {
+      "name": "comparisons_complete_full_s3",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "full",
+      "seed": 3,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_full_s3.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_full_s3"
+    },
+    {
+      "name": "comparisons_complete_full_s4",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "full",
+      "seed": 4,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_full_s4.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_full_s4"
+    },
+    {
+      "name": "comparisons_complete_full_s5",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "full",
+      "seed": 5,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_full_s5.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_full_s5"
+    },
+    {
+      "name": "comparisons_complete_quality_only_s3",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "quality_only",
+      "seed": 3,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_quality_only_s3.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_quality_only_s3"
+    },
+    {
+      "name": "comparisons_complete_quality_only_s4",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "quality_only",
+      "seed": 4,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_quality_only_s4.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_quality_only_s4"
+    },
+    {
+      "name": "comparisons_complete_quality_only_s5",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "quality_only",
+      "seed": 5,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_quality_only_s5.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_quality_only_s5"
+    },
+    {
+      "name": "comparisons_complete_constant_bc_s3",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "constant_bc",
+      "seed": 3,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_constant_bc_s3.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_constant_bc_s3"
+    },
+    {
+      "name": "comparisons_complete_constant_bc_s4",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "constant_bc",
+      "seed": 4,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_constant_bc_s4.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_constant_bc_s4"
+    },
+    {
+      "name": "comparisons_complete_constant_bc_s5",
+      "comparison": "comparisons",
+      "dataset": "complete",
+      "method": "constant_bc",
+      "seed": 5,
+      "presets": [
+        "comparisons",
+        "all"
+      ],
+      "config": "configs/experiments/comparisons_complete_constant_bc_s5.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 11000,
+      "validation_episodes": 20,
+      "test_seed_start": 30000,
+      "test_episodes": 50,
+      "recorded_run_name": "followup_v1_complete_constant_bc_s5"
+    },
+    {
+      "name": "ablations_low_baseline_s0",
+      "comparison": "ablations",
+      "dataset": "mixture",
+      "method": "baseline",
+      "seed": 0,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_low_baseline_s0.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_low_complete_baseline_s0"
+    },
+    {
+      "name": "ablations_low_baseline_s1",
+      "comparison": "ablations",
+      "dataset": "mixture",
+      "method": "baseline",
+      "seed": 1,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_low_baseline_s1.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_low_complete_baseline_s1"
+    },
+    {
+      "name": "ablations_low_baseline_s2",
+      "comparison": "ablations",
+      "dataset": "mixture",
+      "method": "baseline",
+      "seed": 2,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_low_baseline_s2.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_low_complete_baseline_s2"
+    },
+    {
+      "name": "ablations_low_full_s0",
+      "comparison": "ablations",
+      "dataset": "mixture",
+      "method": "full",
+      "seed": 0,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_low_full_s0.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_low_complete_full_s0"
+    },
+    {
+      "name": "ablations_low_full_s1",
+      "comparison": "ablations",
+      "dataset": "mixture",
+      "method": "full",
+      "seed": 1,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_low_full_s1.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_low_complete_full_s1"
+    },
+    {
+      "name": "ablations_low_full_s2",
+      "comparison": "ablations",
+      "dataset": "mixture",
+      "method": "full",
+      "seed": 2,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_low_full_s2.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_low_complete_full_s2"
+    },
+    {
+      "name": "ablations_low_quality_only_s0",
+      "comparison": "ablations",
+      "dataset": "mixture",
+      "method": "quality_only",
+      "seed": 0,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_low_quality_only_s0.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_low_complete_wo_adaptive_s0"
+    },
+    {
+      "name": "ablations_low_quality_only_s1",
+      "comparison": "ablations",
+      "dataset": "mixture",
+      "method": "quality_only",
+      "seed": 1,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_low_quality_only_s1.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_low_complete_wo_adaptive_s1"
+    },
+    {
+      "name": "ablations_low_quality_only_s2",
+      "comparison": "ablations",
+      "dataset": "mixture",
+      "method": "quality_only",
+      "seed": 2,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_low_quality_only_s2.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_low_complete_wo_adaptive_s2"
+    },
+    {
+      "name": "ablations_low_adaptive_bc_only_s0",
+      "comparison": "ablations",
+      "dataset": "mixture",
+      "method": "adaptive_bc_only",
+      "seed": 0,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_low_adaptive_bc_only_s0.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_low_complete_wo_quality_s0"
+    },
+    {
+      "name": "ablations_low_adaptive_bc_only_s1",
+      "comparison": "ablations",
+      "dataset": "mixture",
+      "method": "adaptive_bc_only",
+      "seed": 1,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_low_adaptive_bc_only_s1.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_low_complete_wo_quality_s1"
+    },
+    {
+      "name": "ablations_low_adaptive_bc_only_s2",
+      "comparison": "ablations",
+      "dataset": "mixture",
+      "method": "adaptive_bc_only",
+      "seed": 2,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_low_adaptive_bc_only_s2.yaml",
+      "data": "data/processed/kitchen_mixture_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_low_complete_wo_quality_s2"
+    },
+    {
+      "name": "ablations_complete_baseline_s0",
+      "comparison": "ablations",
+      "dataset": "complete",
+      "method": "baseline",
+      "seed": 0,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_complete_baseline_s0.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_complete_original_baseline_s0"
+    },
+    {
+      "name": "ablations_complete_baseline_s1",
+      "comparison": "ablations",
+      "dataset": "complete",
+      "method": "baseline",
+      "seed": 1,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_complete_baseline_s1.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_complete_original_baseline_s1"
+    },
+    {
+      "name": "ablations_complete_baseline_s2",
+      "comparison": "ablations",
+      "dataset": "complete",
+      "method": "baseline",
+      "seed": 2,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_complete_baseline_s2.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_complete_original_baseline_s2"
+    },
+    {
+      "name": "ablations_complete_full_s0",
+      "comparison": "ablations",
+      "dataset": "complete",
+      "method": "full",
+      "seed": 0,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_complete_full_s0.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_complete_original_full_s0"
+    },
+    {
+      "name": "ablations_complete_full_s1",
+      "comparison": "ablations",
+      "dataset": "complete",
+      "method": "full",
+      "seed": 1,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_complete_full_s1.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_complete_original_full_s1"
+    },
+    {
+      "name": "ablations_complete_full_s2",
+      "comparison": "ablations",
+      "dataset": "complete",
+      "method": "full",
+      "seed": 2,
+      "presets": [
+        "ablations",
+        "all"
+      ],
+      "config": "configs/experiments/ablations_complete_full_s2.yaml",
+      "data": "data/processed/kitchen_complete_quality.npz",
+      "overlay": null,
+      "validation_seed_start": 10000,
+      "validation_episodes": 20,
+      "test_seed_start": 20000,
+      "test_episodes": 50,
+      "recorded_run_name": "kitchen_complete_original_full_s2"
+    }
+  ]
+}

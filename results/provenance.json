@@ -1,0 +1,22 @@
+{
+  "description": "Numerical extraction from audited per-model experiment records. No retraining performed during repository consolidation.",
+  "sources": [
+    {
+      "comparison": "comparisons",
+      "audited_statistics_file": "method_comparison_statistics.json",
+      "sha256": "ca99e49b3002701d614b249efae6a0754bf43e3c5d3da1d3a233afdf71955580",
+      "runs": 42
+    },
+    {
+      "comparison": "ablations",
+      "audited_statistics_file": "component_ablation_statistics.json",
+      "sha256": "b3112994992f764a63c009d7ac6988c3aad71e257d340039a38e72cb2ff1a911",
+      "runs": 18
+    }
+  ],
+  "training_runs": 60,
+  "checkpoint_records": 120,
+  "validation_records": 2400,
+  "summary_groups": 40,
+  "statistics": "Mean and sample standard deviation (ddof=1) across three training seeds, separately for each comparison block."
+}
